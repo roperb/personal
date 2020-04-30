@@ -8,5 +8,28 @@ Evaluate the sum of all the amicable numbers under 10000.
 """
 
 inputFactorList = range(1,5001)
-def simpleFactorList(n,inputList):
-    
+def genFactorList(n):
+
+    factorList = [1]
+    for num in range(2,int(n**.5)+1):
+        if n%num == 0:
+            if num**2 != n:
+                factorList.append(num)
+                factorList.append(int(n/num))
+            else:
+                factorList.append(num)
+    return factorList
+
+def d(n):
+    return sum(genFactorList(n))
+
+
+amNumbers = []
+
+for a in range(10001):
+    b = d(a)
+    if a == d(b) and a != b:
+        amNumbers.append(a)
+
+print(sum(amNumbers))
+
