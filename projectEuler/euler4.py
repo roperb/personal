@@ -1,11 +1,18 @@
 #A palindromic number reads the same both ways.
 #Find the largest palindrome made from the product of two 3-digit numbers.
 
-import sys
-sys.path.insert(0, '/Users/brianroper/Documents/github/math')
-sys.path.insert(0, '/Users/brianroper/Documents/github/genLibrary')
+def checkIfPalindrome(number):
+    number = str(number)
+    palCheckVal = 1
+    for i in range(len(number) / 2):
+        if number[i] != number[-(i + 1)]:
+            palCheckVal = 0
 
-from checkIfPalindrome import checkIfPalindrome
+    if palCheckVal == 1:
+        return True
+    else:
+        return False
+
 
 lowerBound = 900
 upperBound = 1001
