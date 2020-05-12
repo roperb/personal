@@ -1,7 +1,7 @@
 #Prime Factor List Generator
 
 import sys
-sys.path.insert(0, '/Users/brianroper/Dropbox/03 - Code/roper_library')
+sys.path.insert(0, '/Users/brianroper/Dropbox/03 - Code/genlib')
 from genPrimeList import genPrimeList
 
 import math

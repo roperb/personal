@@ -4,7 +4,7 @@
 #
 
 import sys
-sys.path.insert(0, '/Users/brianroper/Dropbox/03 - Code/roper_library')
+sys.path.insert(0, '/Users/brianroper/Dropbox/03 - Code/genlib')
 import random
 import math
 from gcd2 import gcd

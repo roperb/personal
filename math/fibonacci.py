@@ -42,4 +42,4 @@ def fibonacci(n,method="ntermlist"):
     return fib_list
 
 
-print fibonacci(50, method="nterm")
+print(fibonacci(50, method="nterm"))

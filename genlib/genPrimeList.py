@@ -1,7 +1,7 @@
 #Returns all primes up to a number n
 
 import sys
-sys.path.insert(0, '/Users/brianroper/Dropbox/03 - Code/roper_library')
+sys.path.insert(0, '/Users/brianroper/Dropbox/03 - Code/genlib')
 
 from genPrime import genPrime
 

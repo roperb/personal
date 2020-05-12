@@ -1,8 +1,8 @@
 #Generates all primes up to a number n using an initial list
 
 import sys
-sys.path.insert(0, '/Users/brianroper/Dropbox/03 - Code/roper_library')
-sys.path.insert(0, 'C:\Users\Brian/Dropbox/03 - Code/roper_library')
+sys.path.insert(0, '/Users/brianroper/Dropbox/03 - Code/genlib')
+sys.path.insert(0, 'C:\Users\Brian/Dropbox/03 - Code/genlib')
 
 import math
 from fileToIntList import fileToIntList

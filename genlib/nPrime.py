@@ -1,9 +1,9 @@
 #Generates the nth prime
 
 import sys
-sys.path.insert(0, '/Users/brianroper/Dropbox/03 - Code/roper_library')
+sys.path.insert(1, '/Users/roperb/PycharmProjects/personal/math')
 
-from genPrime import genPrime
+from primelib import genPrime
 
 import math
 from fileToIntList import fileToIntList
@@ -12,7 +12,7 @@ from os.path import exists
 
 def nPrime(n, localPrimeFile='primelist.txt'):
     if exists(localPrimeFile):
-        print "Local file containing list of primes exists called ",localPrimeFile
+        print("Local file containing list of primes exists called ",localPrimeFile)
         primeList=fileToIntList(localPrimeFile)
         if len(primeList) > n:
             return primeList[0:n-1]

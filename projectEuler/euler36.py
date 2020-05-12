@@ -7,13 +7,13 @@ Find the sum of all numbers, less than one million, which are palindromic in bas
 (Please note that the palindromic number, in either base, may not include leading zeros.)
 """
 def digtobin(n):
-    pass
+    return int(bin(n)[2:])
 
-
-def checkIfPalindrome(number):
-    number = str(number)
+def ispal(number):
+    if type(number) != type(""):
+        number = str(number)
     palCheckVal = 1
-    for i in range(len(number) / 2):
+    for i in range(len(number) // 2):
         if number[i] != number[-(i + 1)]:
             palCheckVal = 0
 
@@ -23,7 +23,13 @@ def checkIfPalindrome(number):
         return False
 
 def main():
-    pass
+    sum = 0
+    for n in range(1000000):
+        if n%2 !=0:
+            if ispal(n) and ispal(digtobin(n)):
+                sum += n
+    print(sum)
+
 
 if __name__== "__main__":
     main()
